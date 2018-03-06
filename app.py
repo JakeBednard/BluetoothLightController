@@ -3,6 +3,7 @@ import time
 
 if __name__ == '__main__':
 
+    # Bluetooth Light MAC Addresses
     ctrl = BluetoothLightController(
         [
             'C4:BE:84:51:A6:BC',  # Behind TV
@@ -12,13 +13,8 @@ if __name__ == '__main__':
     )
 
     while True:
-        #print("Turning on Orb Mode")
-        #start = time.time()
+        # Uncomment a mode to enable it.
         #ctrl.orb()
-        #end = (time.time() - start)
-        #print('Elapsed Time: ', end)
-        #print("Turning Off")
-        #ctrl.turn_off()
-        #print("Turning On")
         #ctrl.turn_on()
+        #ctrl.turn_off()
         ctrl.orb_night()
